@@ -15,7 +15,7 @@
                 type="text"
                 class="form-control"
                 id="firstName"
-                placeholder="5"
+                placeholder=""
                 v-model="data.firstNumber"
                 required
               />
@@ -24,10 +24,10 @@
             <div class="col-sm-1">
               <select class="form-select" id="country" required  v-model="data.type">
                <option value="" selected disabled hidden>Choose here</option>
-                <option value="add" selected="selected" >👽</option>
-                <option value="sub">💀</option>
-                <option value="multi">👻</option>
-                <option value="div">😱</option>
+                <option value="add" >Alien 👽</option>
+                <option value="sub">Skull 💀</option>
+                <option value="multi">Ghost 👻</option>
+                <option value="div">Scream 😱</option>
               </select>
               <div class="invalid-feedback">Please select a valid country.</div>
             </div>
@@ -38,7 +38,7 @@
                 type="text"
                 class="form-control"
                 id="lastName"
-                placeholder="7"
+                placeholder=""
                 v-model="data.secondNumber"
                 required
               />

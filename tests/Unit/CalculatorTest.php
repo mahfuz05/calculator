@@ -93,6 +93,7 @@ class CalculatorTest extends TestCase
         return [
             ['add', 9,9, 18],
             ['sub', 10, 1, 9],
+            ['sub', 0, 9, -9],
             ['multi', 4,5, 20],
             ['div', 9, 3, 3],
            // ['div', 9, 0, DivisionByZeroError::class]

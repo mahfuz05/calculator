@@ -28122,7 +28122,7 @@ var render = function () {
                   attrs: {
                     type: "text",
                     id: "firstName",
-                    placeholder: "5",
+                    placeholder: "",
                     required: "",
                   },
                   domProps: { value: _vm.data.firstNumber },
@@ -28189,17 +28189,21 @@ var render = function () {
                       [_vm._v("Choose here")]
                     ),
                     _vm._v(" "),
-                    _c(
-                      "option",
-                      { attrs: { value: "add", selected: "selected" } },
-                      [_vm._v("👽")]
-                    ),
+                    _c("option", { attrs: { value: "add" } }, [
+                      _vm._v("Alien 👽"),
+                    ]),
                     _vm._v(" "),
-                    _c("option", { attrs: { value: "sub" } }, [_vm._v("💀")]),
+                    _c("option", { attrs: { value: "sub" } }, [
+                      _vm._v("Skull 💀"),
+                    ]),
                     _vm._v(" "),
-                    _c("option", { attrs: { value: "multi" } }, [_vm._v("👻")]),
+                    _c("option", { attrs: { value: "multi" } }, [
+                      _vm._v("Ghost 👻"),
+                    ]),
                     _vm._v(" "),
-                    _c("option", { attrs: { value: "div" } }, [_vm._v("😱")]),
+                    _c("option", { attrs: { value: "div" } }, [
+                      _vm._v("Scream 😱"),
+                    ]),
                   ]
                 ),
                 _vm._v(" "),
@@ -28222,7 +28226,7 @@ var render = function () {
                   attrs: {
                     type: "text",
                     id: "lastName",
-                    placeholder: "7",
+                    placeholder: "",
                     required: "",
                   },
                   domProps: { value: _vm.data.secondNumber },

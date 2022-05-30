@@ -16,7 +16,7 @@ class CalculatorController extends Controller
         $this->service = $service;
     } 
 
-    public function index(CalculatorRequest $request, CalculatorFactory $factory)
+    public function index(CalculatorRequest $request)
     {
         try {
             $firstNumber = $request->firstNumber;
