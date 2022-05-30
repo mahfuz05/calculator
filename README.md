@@ -35,7 +35,7 @@ list for the operator.
 
 ## How to Run
 
-1. curl -s "https://laravel.build/example-app" | bash
-2. cd example-app
+1. clone in to your desire folder
+2. cd $DIRECTORY
 3. ./vendor/bin/sail up
 4. ./vendor/bin/sail test
