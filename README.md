@@ -37,5 +37,15 @@ list for the operator.
 
 1. clone in to your desire folder
 2. cd $DIRECTORY
-3. ./vendor/bin/sail up
-4. ./vendor/bin/sail test
+3. docker run --rm \
+    -u "$(id -u):$(id -g)" \
+    -v $(pwd):/var/www/html \
+    -w /var/www/html \
+    laravelsail/php81-composer:latest \
+    composer install --ignore-platform-reqs
+    
+
+4. cp .example.env .env
+4. ./vendor/bin/sail php artisan key:generate
+5. ./vendor/bin/sail up
+6. ./vendor/bin/sail test
