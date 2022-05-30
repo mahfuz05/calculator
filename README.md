@@ -45,7 +45,13 @@ list for the operator.
     composer install --ignore-platform-reqs
     
 
-4. cp .example.env .env
-4. ./vendor/bin/sail php artisan key:generate
-5. ./vendor/bin/sail up
+4. cp .env.example .env
+5. ./vendor/bin/sail up -d
+6. ./vendor/bin/sail php artisan key:generate
+7. open http://localhost/ in your browser you will the website
 6. ./vendor/bin/sail test
+
+
+## TODO
+custom app port from .env file
+
